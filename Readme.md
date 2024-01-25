@@ -13,8 +13,8 @@ Accepted by **ICLR2024** , to cite this work:
 }
 ```
 ## Environment
-1. Install 'pytorch' and 'torchvision' (we use pytorch==1.8.1 and torchvision==0.8.2).
-2. 'pip install -r requirements.txt'
+1. Install `pytorch` and `torchvision` (we use pytorch==1.8.1 and torchvision==0.8.2).
+2. `pip install -r requirements.txt`
 
 ## Dataset
 
