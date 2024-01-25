@@ -1,6 +1,6 @@
-Can We Evaluate Domain Adaptation Models Without Target-Domain Labels?
+Can We Evaluate Domain Adaptation Models Without Target-Domain Labels?  
 ============================================================================
-
+This repo is the official implementation of "Divide to Adapt: Mitigating Confirmation Bias for Domain Adaptation of Black-Box Predictors". Our method is termed as BETA. To cite this work:
 ## Requirements
 ```
 pytorch>=1.8.0
