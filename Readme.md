@@ -6,19 +6,16 @@ Accepted by **ICLR2024** , to cite this work:
 ```
 @inproceedings{yang2023can,
   title={Can We Evaluate Domain Adaptation Models Without Target-Domain Labels? A Metric for Unsupervised Evaluation of Domain Adaptation},
-  author={Yang, Jianfei and Qian, Hanjie and Xu, Yuecong and Xie, Lihua},
+  author={Yang, Jianfei and Qian, Hanjie and Xu, Yuecong and Kai, Wang and Xie, Lihua},
   booktitle = "International Conference on Learning Representations",
   Month = "May",
   year="2024"
 }
 ```
-## Requirements
-```
-pytorch>=1.8.0
-torchvision>=0.8.2
-Python 3.8+
-timm
-```
+## Environment
+1. Install '''pytorch''' and '''torchvision''' (we use pytorch==1.8.1 and torchvision==0.8.2).
+2. pip install -r requirements.txt
+
 ## Dataset
 
 Following datasets can be downloaded automatically into data folder:
