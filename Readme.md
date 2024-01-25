@@ -1,6 +1,8 @@
 Can We Evaluate Domain Adaptation Models Without Target-Domain Labels?  
 ============================================================================
-This repo is the official implementation of ##Can We Evaluate Domain Adaptation Models Without Target-Domain Labels? A Metric for Unsupervised Evaluation of Domain Adaptation##. Our method is termed as BETA. To cite this work:
+This repo is the official implementation of 
+## Can We Evaluate Domain Adaptation Models Without Target-Domain Labels? A Metric for Unsupervised Evaluation of Domain Adaptation. 
+To cite this work:
 ## Requirements
 ```
 pytorch>=1.8.0
