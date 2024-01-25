@@ -63,3 +63,6 @@ transfer_score=get_transfer_score(train_target_iter, classifier, num_classes)
 - train_target_iter: the dataloader of target data  
 - classifier: the model after UDA  
 - num_classes: the number of classes
+  
+## Acknowledge
+We would like to thank https://github.com/thuml/Transfer-Learning-Library
