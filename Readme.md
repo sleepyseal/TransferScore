@@ -39,13 +39,27 @@ Transfer-Score/
     │   ├── ${DN_domain}_train.txt
     │   ├── ${DN_domain}_test.txt
 ```
-## Demo
+## Demo Train on Office31 and evaluate the checkpoint
 
-To train a DAN method on Office31 D2A and save the model:
+To train a UDA method on Office31 D2A and save the model:
 ```
-CUDA_VISIBLE_DEVICES=0 python dan.py data/office31 -d Office31 -s D -t A -a resnet50 --epochs 20 --seed 0 --log logs/dan/Office31_D2A
+python train.py data/office31 -d Office31 -s D -t A -a resnet50 --epochs 20 --seed 0 --log logs/dan/Office31_D2A
 ```
-To calculate a DAN method's transfer score on Office31 D2A:
+To calculate the transfer score of each checkpoint on Office31 D2A:
 ```
-CUDA_VISIBLE_DEVICES=0 python dan.py data/office31 -d Office31 -s D -t A -a resnet50 --epochs 20 --seed 0 --log logs/dan/Office31_D2A --phase evaluation
+python train.py data/office31 -d Office31 -s D -t A -a resnet50 --epochs 20 --seed 0 --log logs/dan/Office31_D2A --phase evaluation
 ```
+## Demo Train on Office31 with different hyper-parameter (learning rate)
+To train a UDA method on Office31 D2A with different learning rate and save the model:
+```
+python train.py data/office31 -d Office31 -s D -t A -a resnet50 --epochs 20 --seed 0 --lr 1 --log logs/dan/Office31_D2A
+```
+Then calculate the transfer score
+
+## To calculate the transfer score
+```
+transfer_score=get_transfer_score(train_target_iter, classifier, num_classes)
+```
+train_target_iter: the dataloader of target data
+classifier: the model after UDA
+num_classes: the number of classes
