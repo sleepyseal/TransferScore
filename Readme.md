@@ -16,15 +16,29 @@ Accepted by **ICLR2024** , to cite this work:
 1. Install `pytorch` and `torchvision` (we use pytorch==1.8.1 and torchvision==0.8.2).
 2. `pip install -r requirements.txt`
 
-## Dataset
+## Datasets
 
 Following datasets can be downloaded automatically into data folder:
-
-- [Office31](https://www.cc.gatech.edu/~judy/domainadapt/)
-- [OfficeHome](https://www.hemanthdv.org/officeHomeDataset.html)
-- [VisDA2017](http://ai.bu.edu/visda-2017/)
-- [DomainNet](http://ai.bu.edu/M3SDA/)
-
+```
+Transfer-Score/
+├── data/
+    ├── office_home/
+    │   ├── Art
+    │   ├── Clipart
+    │   ├── Product
+    │   ├── Real World
+    ├── office31/
+    │   ├── amazon
+    │   ├── dslr
+    │   ├── webcam
+    ├── visda17/
+    │   ├── train
+    │   ├── validation 
+    ├── DomainNet/
+    │   ├── ${DN_domain}/
+    │   ├── ${DN_domain}_train.txt
+    │   ├── ${DN_domain}_test.txt
+```
 ## Demo
 
 To train a DAN method on Office31 D2A and save the model:
