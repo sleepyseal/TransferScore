@@ -112,7 +112,7 @@ def main(args: argparse.Namespace):
         return
 
     if args.phase =='evaluation':
-        entropy_stat(train_target_iter, classifier, num_classes)
+        get_transfer_score(train_target_iter, classifier, num_classes)
         return
     # start training
     best_acc1 = 0.
@@ -213,7 +213,7 @@ def get_epoch_num(file):
     num=sub[5:]
     return int(num)
 
-def entropy_stat(train_target_iter, classifier, num_classes):
+def get_transfer_score(train_target_iter, classifier, num_classes):
     ACC=[]
     Score_epoch=[]
     weight_path= osp.join('dan_weight', args.data, args.source[0]+'2'+args.target[0]+'_'+str(args.seed))
