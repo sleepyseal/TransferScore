@@ -6,7 +6,7 @@ Accepted by **ICLR2024** , to cite this work:
 ```
 @inproceedings{yang2023can,
   title={Can We Evaluate Domain Adaptation Models Without Target-Domain Labels?},
-  author={Yang, Jianfei and Qian, Hanjie and Xu, Yuecong and Kai, Wang and Xie, Lihua},
+  author={Yang, Jianfei and Qian, Hanjie and Xu, Yuecong and Wang, Kai and Xie, Lihua},
   booktitle = {International Conference on Learning Representations},
   Month = "May",
   year="2024"
