@@ -1,7 +1,7 @@
 Can We Evaluate Domain Adaptation Models Without Target-Domain Labels?  
 ============================================================================
 This repo is the official implementation of our paper
-*"Can We Evaluate Domain Adaptation Models Without Target-Domain Labels? A Metric for Unsupervised Evaluation of Domain Adaptation."*
+*"Can We Evaluate Domain Adaptation Models Without Target-Domain Labels?"*
 Accepted by **ICLR2024** , to cite this work:
 ```
 @inproceedings{yang2023can,
